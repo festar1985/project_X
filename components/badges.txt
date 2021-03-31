@@ -1,0 +1,33 @@
+ <span class="badge badge--primary">10% off</span>
+
+ .badge {
+  border-radius: 20px;
+  padding: 0.5rem 0.2rem;
+  font-weight: 500;
+  font-size: 2rem;
+  white-space: nowrap;
+  /* no collapsing into 2 lines by wraping */
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.badge--seconday {
+  background: var(--color-seconday);
+  color: white;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,35 @@
+<ul class="lists list--tick">
+      <li class="list__item">item 2</li>
+      <li class="list__item">item 3</li>
+      <li class="list__item">item 1</li>
+    </ul>
+
+
+    /* lists */
+
+.lists {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg); /*change the icon of the list to smth from iage */
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
