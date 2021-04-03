@@ -1,0 +1,32 @@
+<div class="media">
+      <div class="media__image">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#snap"></use>
+        </svg>
+      </div>
+      <div class="media__body">
+        <h3 class="media__title">Easy Start & Managed Updates</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          earum illum consequuntur dolorum quos? Laboriosam cumque ducimus,
+          tempora velit at quae voluptatum architecto, praesentium maxime
+          perferendis aliquid fugiat placeat voluptatibus!
+        </p>
+      </div>
+    </div>
+
+
+    /* media */
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
+}

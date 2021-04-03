@@ -2,7 +2,7 @@
       <svg class="icon icon--primary">
         <use xlink:href="images/sprite.svg#settings"></use>
       </svg>
-
+</span>
       
 .icon {
   width: 40px;

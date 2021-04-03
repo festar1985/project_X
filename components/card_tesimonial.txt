@@ -1,0 +1,61 @@
+ <div class="card testimonial">
+      <div class="grid grid--1row2columns">
+        <div class="testimonial__image">
+          <img src="images/testimonial.jpg" />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--white icon-small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            distinctio et iusto labore molestiae porro similique tempora quidem
+            unde, earum velit ad recusandae optio modi cum ipsa illo nulla! Est.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Georgi Konstantinov</h3>
+                <p class="quote__org">FestarDevs</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+    /*testimonial*/
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.2rem;
+  }
+  .testimonial .quote {
+    margin-left: 6rem;
+  }
+}

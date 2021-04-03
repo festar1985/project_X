@@ -1,0 +1,57 @@
+<div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible_heading">Item1</h2>
+        <svg class="icon icon--white collapsible__chevron">
+          <use xlink:href="images/sprite.svg#chevron"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+        consequatur tempore incidunt reprehenderit, eaque, quod quis cupiditate
+        at veritatis nam aperiam mollitia quidem voluptatibus ipsam hic dolorum
+        eveniet. Labore, nam.
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+
+    JS
+    const collapsibles = document.querySelectorAll(".collapsible");
+collapsibles.forEach((item) =>
+  item.addEventListener("click", function () {
+    this.classList.toggle("collapsible--expanded");
+  })
+);
+
+/*Collapsibles*/
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible_heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 1s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+  transition: transform 1s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  transition: all 1s;
+  opacity: 1;
+}
