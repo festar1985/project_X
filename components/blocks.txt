@@ -1,0 +1,59 @@
+<section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">Heading</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          aspernatur.
+        </p>
+      </header>
+    </section>
+    <section class="block block--dark block--skewed-left">
+      <header class="block__header">
+        <div class="container">
+        <h2 class="block__heading">Heading</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          aspernatur.
+        </p>
+      </div>
+      </header>
+    </section>
+
+
+    .block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+  
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: black;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: white;
+}
+
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block__header {
+  text-align: center;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
