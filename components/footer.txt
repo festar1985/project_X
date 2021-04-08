@@ -1,82 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="CSS/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="nav collapsible">
-        <a class="nav__brand" href="/index.html">
-          <img src="images/logo.svg"></img>
-        </a>
-        <svg class="icon icon--white nav__toggler">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-        <ul class="lists nav__list collapsible__content">
-          <li class="nav__item"><a href="#">Hosting</a></li>
-          <li class="nav__item"><a href="#">VPS</a></li>
-          <li class="nav__item"><a href="#">Domain</a></li>
-          <li class="nav__item"><a href="#">Pricing</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="block block--dark block--skewed-left hero">
-      <div class="container">
-        <div class="grid grid--1row2columns">
-          <header class="block__header hero__content">
-            <h1 class="block__heading">Cloud Hosting for Pros</h1>
-            <p class="hero__tagline">Deploy your sites for less than 60 sec.</p>
-            <a href="" class="btn btn--accent btn--streched">Get started</a>
-          </header>
-          <div>
-            <img class="hero__image" src="images/banner.png" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="block container block-domain">
-      <header class="block__header">
-        <h2>Starting at $9 per month</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          incidunt animi consectetur.
-        </p>
-      </header>
-      <div class="input-group">
-        <input
-          type="text"
-          class="input"
-          placeholder="Enter domain name here..."
-        />
-        <button class="btn btn--accent">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#search"></use>
-          </svg>
-          Search
-        </button>
-      </div>
-      <ul class="lists block-domain__prices">
-        <li>
-          <span class="badge badge--secondary badge__domain">.com $9</span>
-        </li>
-        <li>.sg $10</li>
-        <li>.space $11</li>
-        <li>.info $14</li>
-        <li>.net $10</li>
-        <li>.xyz $10</li>
-      </ul>
-    </section>
-
-    <footer class="block block--dark footer">
+ <footer class="block block--dark footer">
       <div class="container grid footer__grid">
         <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
@@ -146,5 +68,73 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
-  </body>
-</html>
+
+    /* Footer*/
+.footer {
+  background: #232323;
+}
+.footer a {
+  color: #777;
+  transition: 0.5s;
+}
+
+.footer__section .list {
+  margin: 0;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__heading {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: white;
+  opacity: 0.3;
+}
+
+.footer__brand img {
+  width: 100%;
+  max-width: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer__chevron {
+    display: none;
+  }
+  .footer__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+  .footer__section {
+    border: none;
+  }
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+}
